@@ -36,7 +36,7 @@ function validatePhone() {
 
 function validatePassword() {
     const password = document.getElementById('password').value;
-    const name = document.getElementById('fullName').value;
+    const name = document.getElementById('fullName').value.toLowerCase();
     const passwordError = document.getElementById('passwordError');
     if (password === "password" || password === name || password.length < 8) {
         passwordError.textContent = "Password is not strong enough.";
